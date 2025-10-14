@@ -1,0 +1,59 @@
+name: Deploy
+
+on:
+  push:
+    branches: ["master"]
+    # tags: ["v*"]
+
+permissions:
+  contents: write
+  deployments: write
+  pages: write
+  id-token: write
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Build project
+        run: |
+          npm install
+          npm run build
+
+      - name: Upload
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./src
+
+  deploy:
+    needs: build
+    name: Deploy to GIthub Pages
+    if: startsWith(github.ref, 'refs/tags/v')
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

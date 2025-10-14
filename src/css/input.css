@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+@import "tailwindcss";
+
+@theme {
+	--font-display:
+		Poppins, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	--font-mono:
+		"JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+		"Liberation Mono", "Courier New", monospace;
+	--color-ancent: red;
+	--color-base00: #0c0d0d;
+	--color-base01: #191a1b;
+	--color-base02: #303334;
+	--color-base03: #4e5153;
+	--color-base04: #6e7275;
+	--color-base05: #b1b5b8;
+	--color-base06: #d4d6d7;
+	--color-base07: #f5f6f6;
+}
+
+@utility container {
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+.blinked {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.blinked:after {
+	content: "";
+	margin-left: 5px;
+	width: 8px;
+	height: 80%;
+	background-color: var(--color-ancent);
+	animation: blink 0.8s steps(1, start) infinite;
+}
+
+@keyframes blink {
+	0%,
+	50% {
+		opacity: 1;
+	}
+	50.01%,
+	100% {
+		opacity: 0;
+	}
+}
+
+a {
+	font-weight: 600;
+}
+
+a:hover {
+	color: var(--color-ancent);
+}
+
+.strip {
+	background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20'><line x1='0' y1='20' x2='20' y2='0' stroke='%23333' stroke-width='1'/></svg>");
+	/* background-size: 4rem 4rem; */
+	/* background-position: */
+	/* 	2rem 0, */
+	/* 	2rem 0, */
+	/* 	0 0, */
+	/* 	0 0; */
+}
+
+.dot {
+	background-image: repeating-radial-gradient(
+		red 0,
+		red 2px,
+		transparent 2px,
+		transparent 20px
+	);
+	background-size: 10rem 10rem;
+}
