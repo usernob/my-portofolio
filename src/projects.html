@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en" class="bg-base00 font-poppins text-base07">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>My Portofolio - Projects</title>
+        <link href="./css/output.css" rel="stylesheet" />
+        <script defer src="./js/main.js"></script>
+    </head>
+
+    <body class="relative">
+        <header class="top-0 bg-base00 sticky z-90">
+            <div class="p-4 sm:container flex items-center justify-between">
+                <h3 class="blinked !text-xl font-semibold">~$ usernob</h3>
+                <nav class="gap-4 md:flex hidden">
+                    <a href="/" class="">About Me</a>
+                    <a href="/projects.html" class="text-ancent">Projects</a>
+                    <a href="/contacts.html" class="">Contacts</a>
+                </nav>
+            </div>
+        </header>
+
+        <section class="px-4 sm:container mt-10 gap-4 flex items-center">
+            <svg
+                width="20px"
+                height="100px"
+                class="border-base03 text-base03 border"
+            >
+                <defs>
+                    <pattern
+                        id="hatch"
+                        width="12"
+                        height="12"
+                        patternUnits="userSpaceOnUse"
+                    >
+                        <path
+                            d="M0,12 L12,0"
+                            stroke="currentColor"
+                            stroke-width="1"
+                        />
+                    </pattern>
+                </defs>
+
+                <rect width="100%" height="100%" fill="url(#hatch)" />
+            </svg>
+
+            <div>
+                <h2 class="text-ancent mb-2">// Projects</h2>
+                <h3>My works that actually finish</h3>
+            </div>
+
+            <svg
+                class="h-20 text-ancent ml-4 w-[200px]"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <defs>
+                    <pattern
+                        id="wave"
+                        x="0"
+                        y="0"
+                        width="20"
+                        height="20"
+                        patternUnits="userSpaceOnUse"
+                    >
+                        <path
+                            d="M 0 10 Q 5 0 10 10 T 20 10"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            fill="none"
+                        />
+                    </pattern>
+                </defs>
+
+                <rect width="100%" height="100%" fill="url(#wave)" />
+            </svg>
+        </section>
+
+        <section class="px-4 sm:container mt-10">
+            <div id="projects-list" class="border-base03 flex flex-col border">
+                <div class="projects-card">
+                    <h1>01</h1>
+                    <div class="projects-card-image">
+                        <img src="./assets/projects-jawair.png" />
+                        <div class="projects-overlay">
+                            <h2>Jawair</h2>
+                            <h4>
+                                Static Web About Javanese Languange &amp; Script
+                            </h4>
+                            <div class="projects-links">
+                                <a href="https://github.com/usernob/jawair">
+                                    <i
+                                        class="fa fa-github fa-2x"
+                                        aria-hidden="true"
+                                    ></i>
+                                </a>
+                                <a href="https://usernob.github.io/jawair">
+                                    <i
+                                        class="fa fa-link fa-2x"
+                                        aria-hidden="true"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <svg width="100%" height="4.2rem">
+                    <rect width="100%" height="100%" fill="url(#hatch)" />
+                </svg>
+
+                <div class="projects-card">
+                    <h1>02</h1>
+                    <div class="projects-card-image">
+                        <img src="./assets/projects-card-game.png" />
+                        <div class="projects-overlay">
+                            <h2>Card Game</h2>
+                            <h4>
+                                Just simple card game inspired from balatro,
+                                make with SDL3. There's web version!
+                            </h4>
+                            <div class="projects-links">
+                                <a href="https://github.com/usernob/card-game">
+                                    <i
+                                        class="fa fa-github fa-2x"
+                                        aria-hidden="true"
+                                    ></i>
+                                </a>
+                                <a href="https://usernob.github.io/card-game">
+                                    <i
+                                        class="fa fa-link fa-2x"
+                                        aria-hidden="true"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <svg width="100%" height="4.2rem">
+                    <rect width="100%" height="100%" fill="url(#hatch)" />
+                </svg>
+
+                <div class="projects-card">
+                    <h1>03</h1>
+                    <div class="projects-card-image">
+                        <img src="./assets/projects-tetris.png" />
+                        <div class="projects-overlay">
+                            <h2>Tetris</h2>
+                            <h4>
+                                Like everyone else who started gamedev, I also
+                                made tetris. Made with SFML
+                            </h4>
+                            <div class="projects-links">
+                                <a
+                                    href="https://github.com/usernob/sfml-tetris"
+                                >
+                                    <i
+                                        class="fa fa-github fa-2x"
+                                        aria-hidden="true"
+                                    ></i>
+                                </a>
+                                <a
+                                    href="https://github.com/usernob/sfml-tetris/releases/tag/v0.1.0-beta"
+                                >
+                                    <i
+                                        class="fa fa-link fa-2x"
+                                        aria-hidden="true"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <svg width="100%" height="4.2rem">
+                    <rect width="100%" height="100%" fill="url(#hatch)" />
+                </svg>
+
+                <div class="projects-card">
+                    <div
+                        class="flex gap-4 aspect-16/9 w-full flex-col items-center justify-center"
+                    >
+                        <h2 class="!text-6xl">
+                            Coming <span class="text-ancent">Soon</span>
+                        </h2>
+                        <h4 class="!text-3xl mb-4 text-base06">
+                            Who knows what I will make in the future
+                        </h4>
+                        <svg class="w-80 h-20">
+                            <rect
+                                width="100%"
+                                height="100%"
+                                fill="url(#wave)"
+                            />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-base01 p-8 mt-10 flex justify-center">
+            <h4 class="text-base04">
+                Copyright &copy; 2025 Ramzi Pandu Ma'arif. All Rights Reserved.
+            </h4>
+        </footer>
+    </body>
+</html>
