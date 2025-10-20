@@ -15,7 +15,7 @@
 	--font-mono:
 		"Roboto Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
 		"Liberation Mono", "Courier New", monospace;
-	--color-ancent: red;
+	--color-ancent: #ff3030;
 	--color-base00: #0c0d0d;
 	--color-base01: #191a1b;
 	--color-base02: #303334;
@@ -89,14 +89,15 @@ nav a:hover {
 	color: var(--color-ancent);
 }
 
-.strip {
-	background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20'><line x1='0' y1='20' x2='20' y2='0' stroke='%23333' stroke-width='1'/></svg>");
-	/* background-size: 4rem 4rem; */
-	/* background-position: */
-	/* 	2rem 0, */
-	/* 	2rem 0, */
-	/* 	0 0, */
-	/* 	0 0; */
+.hero-backline {
+    font-size: 40rem;
+    z-index: -1;
+    font-style: italic;
+    color: transparent;
+    position: absolute;
+    top: 0px;
+    left: calc(0.3 * -1em);
+    -webkit-text-stroke: 2px var(--color-base01);
 }
 
 
