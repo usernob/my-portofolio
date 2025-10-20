@@ -32,5 +32,5 @@ npm run build
 
 Setelah ini akan tergenerate file `src/output.css`. Sekarang websitenya sudah bisa dijalankan dengan web server favoritmu
 
-- [Link Demo](https://usernob.github.com/my-portofolio)
+- [Link Demo](https://usernob.github.io/my-portofolio)
 - [Link Youtube](https://youtu.be/63nS_F4ke0g)
