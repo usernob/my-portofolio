@@ -9,7 +9,7 @@ const callback = (entries) => {
 	entries.forEach((entry) => {
 		const target = entry.target;
 		if (entry.isIntersecting) {
-			target.style.opacity = 1;
+            target.classList.add("aos-active");
 			if (target.dataset.mode == "move") {
 				target.style.transform = "translate(0)";
 			}
@@ -25,7 +25,6 @@ const observer = new IntersectionObserver(callback, {
 });
 
 elements.forEach((element) => {
-	element.style.opacity = 0;
 	if (element.dataset.mode == "move") {
 		setTranslate(element, element.dataset.translatein);
 	}
@@ -34,9 +33,10 @@ elements.forEach((element) => {
 	}
 	if (element.dataset.boot == "true") {
 		setTimeout(() => {
+            element.classList.add("aos-active");
 			element.style.transform = "translate(0)";
-			element.style.opacity = 1;
-		}, 200);
+		}, 500);
+        return;
 	}
 	observer.observe(element);
 });

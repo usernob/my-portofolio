@@ -228,6 +228,10 @@ form#send-email {
 }
 
 .aos {
+    opacity: 0;
+}
+.aos-active {
+    opacity: 1;
     transition-property: all;
     transition-timing-function: ease-out;
     transition-duration: 500ms;
