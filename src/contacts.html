@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en" class="bg-base00 font-sans1 text-base07 overflow-x-hidden">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>My Portofolio - Contacts</title>
+        <link href="./css/output.css" rel="stylesheet" />
+        <script defer src="./js/main.js"></script>
+    </head>
+
+    <body class="relative">
+        <header class="top-0 bg-base00 sticky z-90">
+            <div class="p-4 sm:container flex items-center justify-between">
+                <h3 class="blinked">~$ usernob</h3>
+                <nav class="gap-4 md:flex hidden">
+                    <a href="/" class="">About Me</a>
+                    <a href="/projects.html" class="">Projects</a>
+                    <a href="/contacts.html" class="text-ancent">Contacts</a>
+                </nav>
+            </div>
+        </header>
+
+        <section class="px-4 sm:container flex min-h-[80vh] items-center">
+            <div class="w-full">
+                <h2
+                    class="text-ancent mb-10 aos"
+                    data-mode="move"
+                    data-translatein="-30px 0"
+                >
+                    // Contacts
+                </h2>
+                <div
+                    class="gap-10 aos flex"
+                    data-mode="move"
+                    data-translatein="-50px 0"
+                >
+                    <div
+                        class="p-8 relative flex flex-1 items-center justify-center"
+                    >
+                        <svg
+                            class="text-base03 border-base03 absolute -z-1 h-full w-full border"
+                        >
+                            <defs>
+                                <pattern
+                                    id="hatch"
+                                    width="12"
+                                    height="12"
+                                    patternUnits="userSpaceOnUse"
+                                >
+                                    <path
+                                        d="M0,12 L12,0"
+                                        stroke="currentColor"
+                                        stroke-width="1"
+                                    />
+                                </pattern>
+                            </defs>
+                            <rect
+                                width="100%"
+                                height="100%"
+                                fill="url(#hatch)"
+                            />
+                        </svg>
+                        <form
+                            class="h-full w-full"
+                            id="send-email"
+                            action="mailto:ramzipandu670@gmail.com"
+                            method="POST"
+                            enctype="text/plain"
+                        >
+                            <h3>Email</h3>
+                            <input type="email" name="email" />
+                            <h3>Message</h3>
+                            <textarea name="message" id="message"></textarea>
+                            <button
+                                type="submit"
+                                class="px-8 py-2 bg-base03 ease-in-out hover:bg-ancent hover:text-base00 text-xl font-bold transition-all duration-300"
+                            >
+                                Submit
+                            </button>
+                        </form>
+                    </div>
+                    <div
+                        class="aos w-3/7"
+                        data-mode="move"
+                        data-translatein="-40px 0"
+                    >
+                        <h3 class="!text-3xl !font-bold mb-4">
+                            MY SOCIAL MEDIA
+                        </h3>
+                        <div class="gap-2 flex flex-col">
+                            <a
+                                href="https://github.com/usernob"
+                                class="gap-2 hover:text-ancent flex items-center"
+                            >
+                                <i
+                                    class="fa fa-github fa-2x"
+                                    aria-hidden="true"
+                                ></i>
+                                <p>usernob</p>
+                            </a>
+
+                            <a
+                                href="https://instagram.com/usernob_v2.0.1"
+                                class="gap-2 hover:text-ancent flex items-center"
+                            >
+                                <i
+                                    class="fa fa-instagram fa-2x"
+                                    aria-hidden="true"
+                                ></i>
+                                <p>usernob_v2.0.1</p>
+                            </a>
+
+                            <a
+                                href="https://www.facebook.com/ramzi.maarif.7"
+                                class="gap-2 hover:text-ancent flex items-center"
+                            >
+                                <i
+                                    class="fa fa-facebook fa-2x"
+                                    aria-hidden="true"
+                                ></i>
+                                <p>Ramtzy Von Abdul Keichiro IV</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-base01 p-8 mt-10 flex justify-center">
+            <h4 class="text-base04">
+                Copyright &copy; 2025 Ramzi Pandu Ma'arif. All Rights Reserved.
+            </h4>
+        </footer>
+    </body>
+</html>

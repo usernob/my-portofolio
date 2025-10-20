@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="bg-base00 font-poppins text-base07">
+<html lang="en" class="bg-base00 font-sans1 text-base07 overflow-x-hidden">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -8,10 +8,10 @@
         <script defer src="./js/main.js"></script>
     </head>
 
-    <body class="relative">
+    <body class="relative overflow-x-hidden">
         <header class="top-0 bg-base00 sticky z-90">
             <div class="p-4 sm:container flex items-center justify-between">
-                <h3 class="blinked !text-xl font-semibold">~$ usernob</h3>
+                <h3 class="blinked">~$ usernob</h3>
                 <nav class="gap-4 md:flex hidden">
                     <a href="/" class="">About Me</a>
                     <a href="/projects.html" class="text-ancent">Projects</a>
@@ -20,63 +20,76 @@
             </div>
         </header>
 
-        <section class="px-4 sm:container mt-10 gap-4 flex items-center">
-            <svg
-                width="20px"
-                height="100px"
-                class="border-base03 text-base03 border"
+        <section class="px-4 sm:container overflow-hidden">
+            <div
+                class="aos mt-10 gap-4 ease-in flex items-center"
+                data-mode="move"
+                data-boot="true"
+                data-translatein="-10% 0"
             >
-                <defs>
-                    <pattern
-                        id="hatch"
-                        width="12"
-                        height="12"
-                        patternUnits="userSpaceOnUse"
-                    >
-                        <path
-                            d="M0,12 L12,0"
-                            stroke="currentColor"
-                            stroke-width="1"
-                        />
-                    </pattern>
-                </defs>
+                <svg
+                    width="20px"
+                    height="100px"
+                    class="border-base03 text-base03 border"
+                >
+                    <defs>
+                        <pattern
+                            id="hatch"
+                            width="12"
+                            height="12"
+                            patternUnits="userSpaceOnUse"
+                        >
+                            <path
+                                d="M0,12 L12,0"
+                                stroke="currentColor"
+                                stroke-width="1"
+                            />
+                        </pattern>
+                    </defs>
 
-                <rect width="100%" height="100%" fill="url(#hatch)" />
-            </svg>
+                    <rect width="100%" height="100%" fill="url(#hatch)" />
+                </svg>
 
-            <div>
-                <h2 class="text-ancent mb-2">// Projects</h2>
-                <h3>My works that actually finish</h3>
+                <div>
+                    <h2 class="text-ancent">// Projects</h2>
+                    <p>My works that actually finish</p>
+                </div>
+
+                <svg
+                    class="h-20 text-ancent ml-4 w-[200px]"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <defs>
+                        <pattern
+                            id="wave"
+                            x="0"
+                            y="0"
+                            width="20"
+                            height="20"
+                            patternUnits="userSpaceOnUse"
+                        >
+                            <path
+                                d="M 0 10 Q 5 0 10 10 T 20 10"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                fill="none"
+                            />
+                        </pattern>
+                    </defs>
+
+                    <rect width="100%" height="100%" fill="url(#wave)" />
+                </svg>
             </div>
-
-            <svg
-                class="h-20 text-ancent ml-4 w-[200px]"
-                xmlns="http://www.w3.org/2000/svg"
-            >
-                <defs>
-                    <pattern
-                        id="wave"
-                        x="0"
-                        y="0"
-                        width="20"
-                        height="20"
-                        patternUnits="userSpaceOnUse"
-                    >
-                        <path
-                            d="M 0 10 Q 5 0 10 10 T 20 10"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            fill="none"
-                        />
-                    </pattern>
-                </defs>
-
-                <rect width="100%" height="100%" fill="url(#wave)" />
-            </svg>
         </section>
 
-        <section class="px-4 sm:container mt-10">
-            <div id="projects-list" class="border-base03 flex flex-col border">
+        <section class="px-4 sm:container mt-10 overflow-hidden">
+            <div
+                id="projects-list"
+                class="aos border-base03 flex flex-col border"
+                data-mode="move"
+                data-translatein="0 100px"
+                data-boot="true"
+            >
                 <div class="projects-card">
                     <h1>01</h1>
                     <div class="projects-card-image">
@@ -178,7 +191,7 @@
 
                 <div class="projects-card">
                     <div
-                        class="flex gap-4 aspect-16/9 w-full flex-col items-center justify-center"
+                        class="gap-4 flex aspect-16/9 w-full flex-col items-center justify-center"
                     >
                         <h2 class="!text-6xl">
                             Coming <span class="text-ancent">Soon</span>
